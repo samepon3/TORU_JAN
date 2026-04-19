@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    tools:context=".manualInputActivity">
+
+
+
+    <Button
+        android:id="@+id/homeButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#D7D2CB"
+        android:text=""
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/homeimage"
+        android:layout_width="66dp"
+        android:layout_height="54dp"
+        app:layout_constraintBottom_toBottomOf="@+id/homeButton"
+        app:layout_constraintEnd_toEndOf="@+id/homeButton"
+        app:layout_constraintStart_toStartOf="@+id/homeButton"
+        app:layout_constraintTop_toTopOf="@+id/homeButton"
+        app:srcCompat="@drawable/home" />
+
+    <EditText
+        android:id="@+id/janInput"
+        android:layout_width="335dp"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="ここへJANコードを入力"
+        android:textAlignment="center"
+        android:textColorHint="#E21782"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/okButton"
+        android:layout_width="98dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#D7D2CB"
+        android:text="OK"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/janInput" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#D7D2CB"
+        android:text=""
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeButton"
+        app:layout_constraintVertical_bias="0.988" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="54dp"
+        android:layout_height="57dp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/backButton"
+        app:layout_constraintEnd_toEndOf="@+id/backButton"
+        app:layout_constraintStart_toStartOf="@+id/backButton"
+        app:layout_constraintTop_toTopOf="@+id/backButton"
+        app:srcCompat="@drawable/back" />
+</androidx.constraintlayout.widget.ConstraintLayout>

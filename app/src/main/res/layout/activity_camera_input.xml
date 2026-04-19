@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".CameraInputActivity">
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/previewView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        app:scaleType="fillCenter">
+
+    </androidx.camera.view.PreviewView>
+
+
+    <View
+        android:id="@+id/scanFrame"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:background="@drawable/scan_frame_border"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="352dp"
+        android:layout_height="109dp"
+        android:layout_marginTop="60dp"
+        android:text="枠の中に\n数字を収めてください"
+        android:textAlignment="center"
+        android:textColor="#E21782"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/scanFrame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/detectedTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#80000000"
+        android:padding="8dp"
+        android:text="数字をスキャン中..."
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scanFrame" />
+
+    <Button
+        android:id="@+id/confirmButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="200dp"
+        android:text="この数字で決定"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detectedTextView" />
+
+    <Button
+        android:id="@+id/homeButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#D7D2CB"
+        android:text=""
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="66dp"
+        android:layout_height="54dp"
+        app:layout_constraintBottom_toBottomOf="@+id/homeButton"
+        app:layout_constraintEnd_toEndOf="@+id/homeButton"
+        app:layout_constraintStart_toStartOf="@+id/homeButton"
+        app:layout_constraintTop_toTopOf="@+id/homeButton"
+        app:srcCompat="@drawable/home" />
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="684dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#D7D2CB"
+        android:text=""
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeButton" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="54dp"
+        android:layout_height="57dp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/backButton"
+        app:layout_constraintEnd_toEndOf="@+id/backButton"
+        app:layout_constraintStart_toStartOf="@+id/backButton"
+        app:layout_constraintTop_toTopOf="@+id/backButton"
+        app:srcCompat="@drawable/back" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    tools:context=".PrintBarcodeActivity">
+
+    <ImageView
+        android:id="@+id/barcodeImageView"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="308dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/resultJan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barcodeImageView"
+        app:layout_constraintVertical_bias="0.068" />
+    <Button
+        android:id="@+id/homeButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#D7D2CB"
+        android:text=""
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="66dp"
+        android:layout_height="54dp"
+        app:layout_constraintBottom_toBottomOf="@+id/homeButton"
+        app:layout_constraintEnd_toEndOf="@+id/homeButton"
+        app:layout_constraintStart_toStartOf="@+id/homeButton"
+        app:layout_constraintTop_toTopOf="@+id/homeButton"
+        app:srcCompat="@drawable/home" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#D7D2CB"
+        android:text=""
+        android:visibility="invisible"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeButton"
+        app:layout_constraintVertical_bias="0.988" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="54dp"
+        android:layout_height="57dp"
+
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/backButton"
+        app:layout_constraintEnd_toEndOf="@+id/backButton"
+        app:layout_constraintStart_toStartOf="@+id/backButton"
+        app:layout_constraintTop_toTopOf="@+id/backButton"
+        app:srcCompat="@drawable/back" />
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="28dp"
+        android:backgroundTint="#D7D2CB"
+        android:text=""
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.929"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/nextImage"
+        android:layout_width="54dp"
+        android:layout_height="57dp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/nextButton"
+        app:layout_constraintEnd_toEndOf="@+id/nextButton"
+        app:layout_constraintStart_toStartOf="@+id/nextButton"
+        app:layout_constraintTop_toTopOf="@+id/nextButton"
+        app:srcCompat="@drawable/next" />
+</androidx.constraintlayout.widget.ConstraintLayout>
